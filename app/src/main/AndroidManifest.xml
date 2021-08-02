@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dpandstatus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DpAndStatus">
+        <activity android:name=".status.SubStatusActivity"></activity>
+        <activity android:name=".favourite.SubFavouriteActivity" />
+        <activity android:name=".file.FullVideoActivity" />
+        <activity android:name=".file.SubMyDownloadActivity" />
+        <activity android:name=".file.FullImageActivity" />
+        <activity android:name=".english_status.EnglishStatusNextShareActivity" />
+        <activity android:name=".hindi_status.HindiStatusNextShareActivity" />
+        <activity android:name=".categorie.CategorieNext2Activity" />
+        <activity android:name=".categorie.CategorieNextActivity" />
+        <activity android:name=".gif.GifNextActivity" />
+        <activity android:name=".latestdp.LatestDpNextActivity" />
+        <activity android:name=".file.MyDownloadActivity" />
+        <activity android:name=".favourite.MyFavouriteActivity" />
+        <activity android:name=".english_status.EnglishStatusNextActivity" />
+        <activity android:name=".hindi_status.HindiStatusNextActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
